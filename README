@@ -1,1 +1,7 @@
 My VIM files
+
+To install:
+ln -s ~/.vim/vimrc ~/.vimrc
+
+Requeriments:
+apt-get install exuberant-ctags
