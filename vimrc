@@ -14,6 +14,12 @@ set nu
 "Activa la busqueda incremental
 set incsearch
 
+"Mapea tecla lider a ,
+let mapleader = ","
+
+"Mostrar comando que se va tipeando
+set showcmd
+
 nmap <C-n> :NERDTreeToggle <CR>
 nmap <C-t> :TlistToggle <CR>
 
