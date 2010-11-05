@@ -1,7 +1,10 @@
-My VIM files
+Mi configuracion de vim
 
-To install:
+Para instalar:
 ln -s ~/.vim/vimrc ~/.vimrc
+cd ~/.vim/
+git submodule init
+git submodule update
 
-Requeriments:
+Requerimientos:
 apt-get install exuberant-ctags
