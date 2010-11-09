@@ -4,11 +4,17 @@ call pathogen#runtime_append_all_bundles()
 
 syntax on
 filetype plugin indent on
-set tabstop=2
+
+"Tabs
+set tabstop=4
+set shiftwidth=4
 set smarttab
-set shiftwidth=2
-set autoindent
 set expandtab
+
+set autoindent
+set smartindent
+
+" Numero de lineas
 set nu
 
 "Activa la busqueda incremental
