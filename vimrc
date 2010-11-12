@@ -28,6 +28,7 @@ set incsearch
 set ignorecase
 set smartcase 
 set hlsearch
+set wrapscan
 
 " Mapea tecla lider a ,
 let mapleader = ","
@@ -38,3 +39,6 @@ set showcmd
 nmap <C-n> :NERDTreeToggle <CR>
 nmap <C-t> :TlistToggle <CR>
 
+" Mapeos para tab sigiente y tab anterior
+map <F2> <ESC>:tabp<CR>
+map <F3> <ESC>:tabn<CR>
