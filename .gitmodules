@@ -22,6 +22,3 @@
 [submodule "bundle/phpcomplete/autoload"]
 	path = bundle/phpcomplete/autoload
 	url = git://github.com/shawncplus/phpcomplete.vim.git
-[submodule "bundle/checksyntax"]
-	path = bundle/checksyntax
-	url = git://github.com/tomtom/checksyntax_vim.git
