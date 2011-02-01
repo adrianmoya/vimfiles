@@ -16,12 +16,12 @@
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git://github.com/ervandew/supertab.git
-[submodule "bundle/checksyntax"]
-	path = bundle/checksyntax
-	url = git://github.com/tomtom/checksyntax_vim.git
 [submodule "bundle/zencoding"]
 	path = bundle/zencoding
 	url = git://github.com/mattn/zencoding-vim.git
 [submodule "bundle/phpcomplete/autoload"]
 	path = bundle/phpcomplete/autoload
 	url = git://github.com/shawncplus/phpcomplete.vim.git
+[submodule "bundle/checksyntax"]
+	path = bundle/checksyntax
+	url = git://github.com/tomtom/checksyntax_vim.git
