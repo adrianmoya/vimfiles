@@ -1,11 +1,29 @@
 set nocp
 
-" Activar pathogen para manejar modules mas facil
+" Activar vundle para manejo de plugins
 filetype off
-call pathogen#runtime_append_all_bundles()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-syntax on
+Plugin 'VundleVim/Vundle.vim'
+
+" Añadir plugins aqui
+
+call vundle#end()            
 filetype plugin indent on
+" Fin activar vundle
+
+set syntax
+
+" Mapea tecla lider a ,
+let mapleader = ","
+
+" Busqueda 
+set incsearch "busqueda incremental
+set ignorecase "ignorar mayúsculas
+set smartcase "si incluyo mayúsculas buscar usándolas
+set hlsearch "resaltar la búsqueda
+set wrapscan "continuar búsqueda desde el principio
 
 " Tecla tabulador
 set tabstop=4
@@ -13,8 +31,8 @@ set shiftwidth=4
 set smarttab
 set expandtab
 
-" Pestanias
-set showtabline=2
+" Pestañas
+set showtabline=2 "Siempre mostrar barra de pestañas
 
 " Indentado
 set autoindent
@@ -23,21 +41,8 @@ set smartindent
 " Numero de lineas
 set nu
 
-" Busqueda 
-set incsearch
-set ignorecase
-set smartcase 
-set hlsearch
-set wrapscan
-
-" Mapea tecla lider a ,
-let mapleader = ","
-
 " Mostrar comando que se va tipeando
 set showcmd
-
-nmap <C-n> :NERDTreeToggle <CR>
-nmap <C-t> :TlistToggle <CR>
 
 " Mapeos para tab sigiente y tab anterior
 map <F2> <ESC>:tabp<CR>
