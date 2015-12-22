@@ -8,12 +8,12 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Añadir plugins aqui
+Plugin 'fatih/vim-go'
 
 call vundle#end()            
 filetype plugin indent on
 " Fin activar vundle
 
-"Activar el resalto de sintáxis
 syntax on
 
 " Mapea tecla lider a ,
