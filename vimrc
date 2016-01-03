@@ -6,6 +6,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'bling/vim-airline'
+Plugin 'altercation/vim-colors-solarized'
 
 " Añadir plugins aqui
 
@@ -15,6 +17,16 @@ filetype plugin indent on
 
 "Activar el resalto de sintáxis
 syntax on
+
+"Backspace como las demas apps
+set backspace=indent,eol,start
+
+" Tema solarized
+set background=dark
+colorscheme solarized
+
+"Cambiar fondo 
+call togglebg#map("<F12>")
 
 " Mapea tecla lider a ,
 let mapleader = ","
@@ -34,6 +46,9 @@ set expandtab
 
 " Pestañas
 set showtabline=2 "Siempre mostrar barra de pestañas
+
+" Linea de estado
+set laststatus=2 "Siempre mostrar la linea de estado
 
 " Indentado
 set autoindent

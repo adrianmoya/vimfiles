@@ -1,6 +1,6 @@
 set nocp
 
-" Activar vundle para manejo de plugins
+" #### Activar vundle para manejo de plugins ####
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -9,15 +9,21 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Añadir plugins aqui
 Plugin 'fatih/vim-go'
+Plugin 'scrooloose/nerdtree'
+Plugin 'bling/vim-airline'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()            
 filetype plugin indent on
-" Fin activar vundle
+" #### Fin activar vundle #####
+
+" #### Generales ####
 
 syntax on
 
-" Mapea tecla lider a ,
-let mapleader = ","
+"Backspace como las demas apps
+set backspace=indent,eol,start
 
 " Busqueda 
 set incsearch "busqueda incremental
@@ -35,9 +41,15 @@ set expandtab
 " Pestañas
 set showtabline=2 "Siempre mostrar barra de pestañas
 
+" Linea de estado
+set laststatus=2 "Siempre mostrar la linea de estado
+
 " Indentado
 set autoindent
 set smartindent
+
+" Mapea tecla lider a ,
+let mapleader = ","
 
 " Numero de lineas
 set nu
@@ -45,6 +57,43 @@ set nu
 " Mostrar comando que se va tipeando
 set showcmd
 
+" #### Fin Generales ###
+
+" #### GUI/Temas ####
+
+" Tema solarized
+set background=light
+colorscheme solarized
+
+" Cambiar fondo 
+call togglebg#map("<F12>")
+
+" Fuente
+set guifont=Inconsolata\ for\ Powerline\ Medium\ 15 
+let g:airline_powerline_fonts = 1
+
+" #### Fin GUI/Temas ####
+
 " Mapeos para tab sigiente y tab anterior
 map <F2> <ESC>:tabp<CR>
 map <F3> <ESC>:tabn<CR>
+
+" #### GO IDE ####
+
+" Mapeo para NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+" Habilitar resaltado de sintáxis
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+" Mapeo para comandos más usados
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
+
+" #### Fin GO IDE ####
