@@ -74,10 +74,6 @@ let g:airline_powerline_fonts = 1
 
 " #### Fin GUI/Temas ####
 
-" Mapeos para tab sigiente y tab anterior
-map <F2> <ESC>:tabp<CR>
-map <F3> <ESC>:tabn<CR>
-
 " #### GO IDE ####
 
 " Mapeo para NERDTree

@@ -7,3 +7,7 @@ Instalar vundle:
 Para usar una configuración particular:
 
 `$> vim -u vimrc`
+
+#Instalar fuentes para powerline
+
+Clonar https://github.com/powerline/fonts e instalar la fuente requerida

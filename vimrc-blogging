@@ -6,8 +6,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-
-" Añadir plugins aqui
+Plugin 'bling/vim-airline'
+Plugin 'reedes/vim-colors-pencil'
+Plugin 'tpope/vim-markdown'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 
@@ -20,6 +21,7 @@ syntax on
 
 "Backspace como las demas apps
 set backspace=indent,eol,start
+
 
 " Mapea tecla lider a ,
 let mapleader = ","
@@ -47,12 +49,30 @@ set laststatus=2 "Siempre mostrar la linea de estado
 set autoindent
 set smartindent
 
-" Numero de lineas
-set nu
-
 " Mostrar comando que se va tipeando
 set showcmd
 
+"### GUI ###
+" Tema pencil
+set background=light
+colorscheme pencil
+
+"Cambiar fondo 
+call togglebg#map("<F12>")
+
 " Mapeo para NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+"Fuente
+set guifont=Cousine\ for\ Powerline\ 16
+let g:airline_powerline_fonts = 1
+
+" Tema airline
+let g:airline_theme = 'pencil'
+
+"### END GUI ###
+
+"Ocultar sintáxis markdown
+set concealcursor=nc
+set conceallevel=2
 
