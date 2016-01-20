@@ -58,7 +58,7 @@ set background=light
 colorscheme pencil
 
 "Cambiar fondo 
-call togglebg#map("<F12>")
+map <F12> :let &background = ( &background == "dark"? "light" : "dark" )<CR>
 
 " Mapeo para NERDTree
 map <C-n> :NERDTreeToggle<CR>
