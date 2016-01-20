@@ -8,6 +8,11 @@ Para usar una configuración particular:
 
 `$> vim -u vimrc`
 
-#Instalar fuentes para powerline
+#Configuraciones disponibles:
 
-Clonar https://github.com/powerline/fonts e instalar la fuente requerida
+*vimrc* Minimo común para uso general
+
+*blogging* Para escribir el blog. Instalar la fuente Cousine.
+
+*golang* Para desarrollar en Go. Instalar la fuente Inconsolata
+
